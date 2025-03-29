@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte Stash - Educational Technology Channel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #a0e4ff;
+            margin-bottom: 2rem;
+        }
+        
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            width: 100%;
+        }
+        
+        .topic-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .topic-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .topic-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .topic-description {
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+        
+        .cta-button {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            margin-top: 1rem;
+            box-shadow: 0 4px 15px rgba(255, 126, 95, 0.4);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(255, 126, 95, 0.6);
+        }
+        
+        .social-links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .social-link {
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .social-link:hover {
+            transform: scale(1.2);
+            color: #a0e4ff;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">Byte Stash</h1>
+        <p class="tagline">Demystifying technology, one byte at a time</p>
+        
+        <div class="topics">
+            <div class="topic-card">
+                <div class="topic-icon"><i class="fas fa-server"></i></div>
+                <h3 class="topic-title">Self Hosting</h3>
+                <p class="topic-description">Take control of your digital life with self-hosted solutions</p>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-icon"><i class="fas fa-cloud"></i></div>
+                <h3 class="topic-title">Cloud Tech</h3>
+                <p class="topic-description">Navigate the cloud landscape with confidence</p>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-icon"><i class="fas fa-microchip"></i></div>
+                <h3 class="topic-title">Microcontrollers</h3>
+                <p class="topic-description">Build amazing projects with embedded systems</p>
+            </div>
+            
+            <div class="topic-card">
+                <div class="topic-icon"><i class="fas fa-robot"></i></div>
+                <h3 class="topic-title">LLMs & AI</h3>
+                <p class="topic-description">Explore the cutting edge of artificial intelligence</p>
+            </div>
+        </div>
+        
+        <a href="https://www.youtube.com/channel/ByteStash" class="cta-button">
+            <i class="fab fa-youtube"></i> Subscribe Now
+        </a>
+        
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-patreon"></i></a>
+        </div>
+    </div>
+</body>
+</html>
